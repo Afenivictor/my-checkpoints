@@ -1,0 +1,151 @@
+.inner1{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,253,191,0.26943277310924374) 100%);
+    transition: transform 0.5s ease-in-out;
+  }
+/* navlink hover style  */
+  .hover:hover{
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  /* hover stylings  */
+  .inner1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .inner2:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .box1:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .box2:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .box3:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .box5{
+    transition: transform 0.5s ease-in-out;
+  }
+  .box5:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .box7:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  /* backround gradient stylings  */
+  .inner2{
+    background: rgb(195,177,34);
+    background: linear-gradient(0deg, rgba(195,177,34,0.48792016806722693) 0%, rgba(45,253,76,0.11257002801120453) 100%);
+    transition: transform 0.5s ease-in-out;
+  }
+  .box1{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,0.4767156862745098) 0%, rgba(191,148,233,0.30584733893557425) 100%);
+    transition: transform 0.5s ease-in-out;
+  }
+  .box2{
+    background: rgb(174,238,210);
+    background: linear-gradient(90deg, rgba(174,238,210,0.33665966386554624) 0%, rgba(20,156,116,0.07335434173669464) 100%);
+    transition: transform 0.5s ease-in-out;
+  }
+  .box3{
+    background: rgb(233,238,174);
+    background: linear-gradient(90deg, rgba(233,238,174,0.31425070028011204) 0%, rgba(211,233,148,0.32825630252100846) 100%);
+    transition: transform 0.5s ease-in-out;
+  }
+  .box6{
+    background: rgb(64,58,180);
+    background: linear-gradient(90deg, rgba(64,58,180,0.7786764363948704) 0%, rgba(29,138,253,1) 50%, rgba(69,94,252,0.7870797977394083) 100%);
+    transition: transform 0.5s ease-in-out;
+  }
+  .box7{
+    background: rgb(174,238,225);
+    background: radial-gradient(circle, rgba(174,238,225,0.31649156244529064) 0%, rgba(148,222,233,0.5377800778514531) 100%);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  /* animation style for the cards  */
+  .card {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+    }
+    .card-img-top, .card-img-hover {
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: opacity 0.5s ease; /* Smooth transition for image fade */
+        object-fit: cover; /* Ensures the image covers the area without distortion */
+    }
+    .card-img-hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0; /* Hidden by default */
+        z-index: 1; /* Ensure it overlays the top image */
+        transition: opacity 0.5s ease; /* Smooth transition for hover image */
+    }
+    .card:hover .card-img-top {
+        opacity: 0; /* Hide the default image on hover */
+    }
+    .card:hover .card-img-hover {
+        opacity: 1; /* Show the hover image on hover */
+    }
+    .card:hover{
+      border-bottom: 3px solid #02274e;
+    }
+    .card-body {
+        position: relative;
+        z-index: 2; /* Ensure text is above images */
+    }
+    .btn-buy-now {
+        position: absolute;
+        bottom: 10px; /* Adjust as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #02274e;
+        color: #fff;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 14px;
+        opacity: 0; /* Initially hidden */
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        z-index: 2; /* Ensure button is above the images */
+    }
+    .card:hover .btn-buy-now {
+        opacity: 1; /* Show button on hover */
+        transform: translateX(-50%) scale(1.1); /* Slightly scale the button */
+    }
+
+
+    A brief description of the design choices made during the development process.
+
+    /* 1. Responsive Layout:
+    Grid System: We utilized the Bootstrap grid system and CSS Grid Layout to create a responsive and flexible design. This allows the layout to adapt seamlessly across different screen sizes, ensuring a user-friendly experience on desktops, tablets, and mobile devices.
+    2. Visual Hierarchy:
+    Card Design: Each card was designed to maintain a consistent and uniform height, creating a clean and organized appearance. The content within the cards (images, titles, prices, etc.) was arranged to guide the user's focus from the most important elements (like the product image and name) to the supporting details.
+    Typography: Font weights and sizes were carefully selected to establish a clear visual hierarchy. Larger, bolder fonts were used for product names and prices to draw attention, while smaller fonts were used for supplementary information.
+    3. Interactivity:
+    Hover Effects: Smooth transitions were applied to images within the cards, allowing users to see an alternate image upon hovering. This adds a layer of interactivity, enhancing the user experience by providing additional product views without leaving the page.
+    Button Visibility: The "Buy Now" buttons are designed to appear with a smooth transition effect when users hover over a card. This keeps the interface clean and uncluttered while still making the call-to-action readily accessible when needed.
+    4. Consistent Aesthetics:
+    Color Scheme and Borders: A consistent color scheme was used throughout the design, with borders  added to the cards to create a subtle yet effective separation between elements. This contributes to a cohesive look and feel across the entire project.
+    Box Shadows: The box-shadow effect on cards adds depth, making the design more visually appealing while maintaining a modern, flat design aesthetic.
+    5. User-Centric Design:
+    Ease of Navigation: The overall layout was kept simple and intuitive, with clear calls to action and easy navigation, ensuring users can find and purchase products with minimal friction.
+    Accessibility: Considerations were made to ensure text is readable and buttons are easily clickable, even on smaller screens, to provide a positive experience for all users.
+    These design choices collectively contribute to a user-friendly, visually appealing, and responsive landing page  eCommerce site that enhances the shopping experience across all devices.
+     */
