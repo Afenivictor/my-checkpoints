@@ -1,0 +1,33 @@
+START
+
+1. Initialize variables:
+   - length ← 0
+   - word_count ← 0
+   - vowel_count ← 0
+   - in_word ← false
+   - vowels ← "aeiouAEIOU"
+
+2. PROMPT user to enter a sentence ending with a period (".").
+
+3. FOR each character in the sentence:
+   - INCREMENT length by 1.
+
+   - IF character is in vowels:
+       - INCREMENT vowel_count by 1.
+
+   - IF character is a letter (a-z or A-Z):
+       - IF in_word is false:
+           - INCREMENT word_count by 1.
+           - SET in_word to true.
+   - ELSE IF character is a space (" "):
+       - SET in_word to false.
+
+   - IF character is a period ("."):
+       - BREAK the loop.
+
+4. OUTPUT the following:
+   - "Length of the sentence: " + length
+   - "Number of words: " + word_count
+   - "Number of vowels: " + vowel_count
+
+END
