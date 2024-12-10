@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8 font-sans">
+    <!-- Header -->
+    <header class="mb-12 text-center">
+        <h1 class="text-4xl font-extrabold text-gray-900">Shopping Cart</h1>
+        <p class="text-lg text-gray-600 mt-2">Find the best products at amazing prices!</p>
+    </header>
+
+    <!-- Product List with Add to Cart buttons -->
+    <div id="product-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Product 1 -->
+        <div class="p-6 bg-white shadow-lg rounded-lg transition-transform transform hover:scale-105 hover:shadow-xl">
+            <img src="https://www-konga-com-res.cloudinary.com/f_auto,fl_lossy,dpr_3.0,q_auto/media/catalog/product/I/T/150493_1613329340.jpg" alt="Laptop" class="w-full h-48 object-cover mb-4 rounded-lg">
+            <h3 class="text-2xl font-semibold text-gray-800">Wireless Bluetooth Headphones - $1500</h3>
+            <button onclick="cart.addItem(product1, 1)" class="mt-4 bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">Add to Cart</button>
+        </div>
+        
+        <!-- Product 2 -->
+        <div class="p-6 bg-white shadow-lg rounded-lg transition-transform transform hover:scale-105 hover:shadow-xl">
+            <img src="https://i0.wp.com/nextcashandcarry.com.ng/wp-content/uploads/2023/01/6384936d412d6.jpeg?fit=1500%2C1500&ssl=1" alt="Phone" class="w-full h-48 object-cover mb-4 rounded-lg">
+            <h3 class="text-2xl font-semibold text-gray-800">Smart LED TV 50 inch - $800</h3>
+            <button onclick="cart.addItem(product2, 1)" class="mt-4 bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">Add to Cart</button>
+        </div>
+        
+        <!-- Product 3 -->
+        <div class="p-6 bg-white shadow-lg rounded-lg transition-transform transform hover:scale-105 hover:shadow-xl">
+            <img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/32/5062291/1.jpg?5973" alt="Headphones" class="w-full h-48 object-cover mb-4 rounded-lg">
+            <h3 class="text-2xl font-semibold text-gray-800">Stainless Steel Water Bottle - $150</h3>
+            <button onclick="cart.addItem(product3, 1)" class="mt-4 bg-blue-500 text-white py-2 px-6 rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Display -->
+    <div id="cart" class="mt-12 p-6 bg-white rounded-lg shadow-xl">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-4">Your Cart</h2>
+        <!-- Cart Items will be dynamically displayed here -->
+    </div>
+
+   <script src="../OOP/oop.js"></script> <!-- Ensure this path is correct -->
+</body>
+</html>
